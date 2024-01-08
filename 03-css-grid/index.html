@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de CSS, grid</title>
+
+    <style>
+      /* .container {
+        background: chocolate;
+        border: 3px solid black;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 50% 100px auto 10vw;
+        grid-template-columns: 1fr 1fr; 1fr -> 100%
+        grid-template-rows: 100px 50px 30px 100px 500px;
+        grid-template-rows: 100px;
+        grid-auto-rows: 200px;
+        grid-auto-flow: row;
+      } */
+
+
+      /* .container {
+        background: blanchedalmond;
+        border: 3px solid black;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 25px repeat(3, 1fr) 25px;
+        grid-template-columns: repeat(3, 25px 50px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+      }
+
+      .container div {
+        background: aquamarine;
+        border: 2px solid #09f;
+        border-radius: 6px;
+      } */
+
+
+      /* div {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(100px, 1fr)
+        );
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 16px;
+      }
+
+      img {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+      } */
+
+
+      /* .container {
+        background: blanchedalmond;
+        border: 3px solid black;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 50px;
+        gap: 4px;
+      }
+
+      @media (width > 500px) {
+        .container {
+          grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+        }
+      }
+
+      .container div {
+        background: aquamarine;
+        border: 2px solid #09f;
+        border-radius: 6px;
+      }
+
+      .container div:first-child {
+        background: lightgreen;
+        border: 2px solid green;
+        grid-column-start: span 1;
+        grid-row-start: span 2;
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+      }
+      
+      .container div:nth-child(2) {
+        background: lightgreen;
+        border: 2px solid green;
+        grid-column-start: span 1;
+        grid-row-start: span 2;
+        grid-column: 1 / -1;
+        grid-row: 1 / -4;
+      } */
+
+
+      /* .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 35px 1fr 100px;
+        min-height: 100vh;
+        grid-template-areas:
+          "header header sidebar"
+          "content content content"
+          "footer footer footer"
+      }
+
+      @media (width > 400px) {
+        .container {
+          grid-template-areas:
+            "header header ."
+            "sidebar content content"
+            "footer footer footer"
+        }
+      }
+
+      .container header {
+        background: #09f;
+        grid-area: header;
+      }
+
+      .container aside {
+        background: yellow;
+        grid-area: sidebar;
+      }
+
+      .container main {
+        background: red;
+        grid-area: content;
+      }
+
+      .container footer {
+        background: lightgreen;
+        grid-area: footer;
+      } */
+
+
+      .container {
+        background: blanchedalmond;
+        border: 3px solid black;
+        border-radius: 10px;
+        display: grid;
+        grid-auto-rows: 50px;
+        grid-template-columns: repeat(3, 50px);
+        gap: 4px;
+        height: 300px;
+        width: 300px;
+        place-content: center;
+      }
+
+      .container div {
+        background: aquamarine;
+        border: 2px solid #09f;
+        border-radius: 6px;
+      }
+
+      .container div:first-child {
+        background: lightgreen;
+        border: 2px solid green;
+        z-index: 2;
+      }
+      
+      .container div:nth-child(2) {
+        background: lightgreen;
+        border: 2px solid green;
+        opacity: .9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <section class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+    </section> -->
+
+    <!-- <div>
+      <img src="https://artofthemovies.co.uk/cdn/shop/products/Avengers3.jpg?v=1644083416">
+      <img src="https://artofthemovies.co.uk/cdn/shop/products/Avengers3.jpg?v=1644083416">
+      <img src="https://artofthemovies.co.uk/cdn/shop/products/Avengers3.jpg?v=1644083416">
+    </div> -->
+
+
+    <!-- <section class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </section> -->
+
+    
+    <!-- <section class="container">
+      <header>header</header>
+      <aside>aside</aside>
+      <main>content</main>
+      <footer>footer</footer>
+    </section> -->
+    
+    
+    <section class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </section>
+  </body>
+
+</html>
